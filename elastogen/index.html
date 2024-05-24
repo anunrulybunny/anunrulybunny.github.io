@@ -207,26 +207,40 @@
     </section>
   
   
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
+  <!-- <section class="hero teaser">
+    <div class="container is-max-desktop"> -->
+  <section class="section">      
+    <div class="container">
       <div class="hero-body">
-        <h2 class="title is-2 has-text-centered">Pipeline</h2>
-        <img src="./static/image/pipeline-overview.png">
-        <br><br>
-        <h2 class="subtitle has-text-justified">
-          ElastoGen inputs a voxelized 3D model and boundary conditions, using physical parameters to generate ElaNet's weights via a diffusion model. ElaNet performs local and global optimizations to compute elastic dynamics.        </h2>
+        <h2 class="title is-2 has-text-centered">Pipeline & Network Architecture</h2>
+
+        <!-- <div class="container"> -->
+
+          <div class="columns is-centered is-full-width">
+            <div class="column">
+              <div class="content">
+              <img src="./static/image/pipeline-overview.png">
+              <br><br>
+              <!-- <h2 class="subtitle has-text-justified"> -->
+                ElastoGen inputs a voxelized 3D model and boundary conditions, using physical parameters to generate ElaNet's weights via a diffusion model. ElaNet performs local and global optimizations to compute elastic dynamics.        
+              <!-- </h2> -->
+              </div>
+              </div>
+
+              <div class="column">
+                <div class="content">
+              <img src="./static/image/pipeline-network.png">
+              <br><br>
+              <!-- <h2 class="subtitle has-text-justified"> -->
+                Adhering to physical laws, our architecture achieves accurate dynamics for hyperelastic materials with minimal parameterization. The network updates positions using ElaNet for local projections and global solving.      
+              <!-- </h2> -->
+              </div>
+              </div>
+
+          </div>
+        
+        <!-- </div> -->
       </div>
-    </div>
-  </section>
-  
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <h2 class="title is-2 has-text-centered">Network Architecture</h2>
-        <img src="./static/image/pipeline-network.png">
-        <br><br>
-        <h2 class="subtitle has-text-justified">
-          Adhering to physical laws, our architecture achieves accurate dynamics for hyperelastic materials with minimal parameterization. The network updates positions using ElaNet for local projections and global solving.      </div>
     </div>
   </section>
             
