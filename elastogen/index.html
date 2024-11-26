@@ -222,7 +222,7 @@
           <div class="columns is-centered is-full-width">
             <div class="column">
               <div class="content">
-              <img src="./static/image/pipeline-overview.png">
+              <img src="./static/image/pipeline-overview_.png">
               <br><br>
                 ElastoGen rasterizes an input 3D model (with boundary conditions) and generates parameters filling our NeuralMTL module. Conceptually, NeuralMTL predicts locally concentrated strain of the object, which is relaxed by a nested RNN loop.
               </div>
@@ -230,7 +230,7 @@
 
               <div class="column">
                 <div class="content">
-              <img src="./static/image/pipeline-network.png">
+              <img src="./static/image/pipeline-network_.png">
               <br><br>
                 The RNN predicts the future trajectory of the object. There are two sub RNN modules. RNN-1 repeatedly relaxes the local stress in a 3D convolution manner. Those relaxed strains are converted to positional signals, and RNN-2 merges local deformation into a displacement field of the object. ElastoGen automatically checks the accuracy of the prediction of both RNN loops, and outputs the final prediction of \(\mathbf{q}_{n+1}\) once the prediction error reaches the prescribed threshold.
               </div>
