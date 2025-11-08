@@ -115,9 +115,6 @@
                 <a href="http://www.kunzhou.net/">Kun Zhou</a><sup>2</sup>,
               </span>
               <span class="author-block">
-                <a href="https://cseweb.ucsd.edu/~haosu/">Hao Su</a><sup>3</sup>,
-              </span>
-              <span class="author-block">
                 <a href="https://www.math.ucla.edu/~cffjiang/">Chenfanfu Jiang</a><sup>4</sup>,
               </span>
               <span class="author-block">
@@ -155,7 +152,7 @@
                 </span>
                 <!-- Video Link. -->
                 <span class="link-block">
-                  <a href="./static/video/elastogen_video.mp4" class="external-link button is-normal is-rounded is-dark">
+                  <a href="./static/video/elastogen_video_compressed.mp4" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                         <svg class="svg-inline--fa fa-youtube fa-w-18" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg><!-- <i class="fab fa-youtube"></i> Font Awesome fontawesome.com -->
                     </span>
@@ -232,7 +229,7 @@
                 <div class="content">
               <img src="./static/image/pipeline-network_.png">
               <br><br>
-                The RNN predicts the future trajectory of the object. There are two sub RNN modules. RNN-1 repeatedly relaxes the local stress in a 3D convolution manner. Those relaxed strains are converted to positional signals, and RNN-2 merges local deformation into a displacement field of the object. ElastoGen automatically checks the accuracy of the prediction of both RNN loops, and outputs the final prediction of \(\mathbf{q}_{n+1}\) once the prediction error reaches the prescribed threshold.
+                The RNN predicts the future trajectory of the object. There are two sub RNN modules. RNN-1 repeatedly relaxes the local stress in a 3D convolution manner. Those relaxed strains are converted to positional signals, and RNN-2 merges local deformation into a displacement field of the object. ElastoGen automatically checks the accuracy of the prediction of both RNN loops, and outputs the final prediction of the next position once the prediction error reaches the prescribed threshold.
               </div>
               </div>
 
@@ -457,7 +454,7 @@
       <h2 class="title is-2 has-text-centered">BibTeX</h2>
         <pre><code>@misc{feng2024elastogen,
     title={ElastoGen: 4D Generative Elastodynamics}, 
-    author={Yutao Feng and Yintong Shang and Xiang Feng and Lei Lan and Shandian Zhe and Tianjia Shao and Hongzhi Wu and Kun Zhou and Hao Su and Chenfanfu Jiang and Yin Yang},
+    author={Yutao Feng and Yintong Shang and Xiang Feng and Lei Lan and Shandian Zhe and Tianjia Shao and Hongzhi Wu and Kun Zhou and Chenfanfu Jiang and Yin Yang},
     year={2024},
     eprint={2405.15056},
     archivePrefix={arXiv},
